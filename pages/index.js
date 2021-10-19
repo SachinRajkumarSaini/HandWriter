@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
+import TextToHandwriter from '../components/TextToHandwriter';
+import ToolsInformation from '../components/ToolsInformation';
 
 const Home = () => {
   return (
-    <div>
-      <NavBar />
-      <Footer />
+    <div style={{ backgroundColor: "#f8f9fb" }}>
+      <TextToHandwriter />
+      <ToolsInformation />
     </div>
   )
 }
