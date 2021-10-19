@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+/* Navbar CSS Code */
+.Navbarbrand{
+    font-size: 2rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-left: 1rem;
+}
+
+.Navbaritem{
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.Navbaritem:hover{
+    background: #7C83FD;
+    background: -webkit-linear-gradient(to right, #7C83FD 0%, #4149E0 100%);
+    background: -moz-linear-gradient(to right, #7C83FD 0%, #4149E0 100%);
+    background: linear-gradient(to right, #7C83FD 0%, #4149E0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.githubIcon{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+/* Footer CSS Code */
+.copyrightText{
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
