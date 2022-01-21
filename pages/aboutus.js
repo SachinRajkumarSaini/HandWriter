@@ -20,7 +20,7 @@ const AboutUs = () => {
                         <Col xs={12} sm={6} md={6} lg={6} xl={6}>
                             <p><b>Customization included:</b></p>
 
-                            <p>    ☆ Add or remove the top and left margins  </p>
+                            <p> ☆ Add or remove the top and left margins  </p>
                             <p>☆ 53 fonts to pick from for FREE</p>
                             <p>☆ AI algorithms to create smart rotation after converting</p>
                             <p>☆ You can upload your fonts too.</p>
@@ -56,7 +56,7 @@ const AboutUs = () => {
                                 ☆ Scanner and shadow effects enhance the realistic look of Assignment, letter, application
                             </p>
                             <p>
-                                ☆ Save the files inside the app so don't look around
+                                ☆ Save the files inside the app so don&apos;t look around
                             </p>
                             <p>
                                 ☆ Most realistic handwritten fonts all the handwriting are custom handwritten

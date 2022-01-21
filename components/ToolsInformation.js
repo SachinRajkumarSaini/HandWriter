@@ -22,7 +22,7 @@ const ToolsInformation = () => {
                     <br />
 
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: '2rem' }}>
-                        <Image style={{ height: '30rem', width: '22rem' }} src="./images/text-to-handwriting-conversion.jpeg" fluid />
+                        <Image style={{ height: '30rem', width: '22rem' }} alt="sample-img" src="./images/text-to-handwriting-conversion.jpeg" fluid />
                         <text className="text-muted" style={{ fontFamily: 'Nanum Gothic', paddingTop: "1rem" }}>Text to Handwriting Image Conversion</text>
                     </div>
 
