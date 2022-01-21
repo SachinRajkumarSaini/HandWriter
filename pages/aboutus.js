@@ -6,8 +6,8 @@ const AboutUs = () => {
     return (
         <Container style={{ backgroundColor: "#f8f9fb", paddingTop: "7rem" }} fluid>
             <Container className={styles.aboutUsContainer} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                <h1 style={{ fontFamily: 'Nanum Gothic', color: "#484cfc", fontSize: "2.8rem" }}>About Project</h1>
                 <br />
+                <h1 style={{ fontFamily: 'Dongle', color: "#484cfc", fontSize: "3.5rem" }}>About Project</h1>
                 <br />
 
                 {/* About Us Text */}

@@ -9,7 +9,7 @@ const NavBar = () => {
     return (
         <Navbar fixed="top" bg="white" expand="lg">
             <Container fluid>
-                <Link href="/" passHref><Navbar.Brand className={styles.Navbarbrand}>Hand Writer</Navbar.Brand></Link>
+                <Link href="/" passHref><Navbar.Brand className={styles.Navbarbrand}>HandWriter</Navbar.Brand></Link>
                 <Navbar.Toggle className={styles.navbarToggle} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-end" style={{ width: "100%" }}>

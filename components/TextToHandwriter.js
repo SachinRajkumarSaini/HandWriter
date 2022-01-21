@@ -7,7 +7,7 @@ import { Paper, Slider } from '@material-ui/core';
 const TextToHandwriter = () => {
 
     const [text, setText] = useState("");
-    const [fontFamily, setFontFamily] = useState("'Architects Daughter', cursive");
+    const [fontFamily, setFontFamily] = useState("'Handlee', cursive");
     const [textColor, setTextColor] = useState("#000000");
     const [showFontColorPicker, setShowFontColorPicker] = useState(false);
     const [paperType, setPaperType] = useState();
@@ -59,10 +59,12 @@ const TextToHandwriter = () => {
                             {/* Font family */}
                             <Col xs={12} sm={6} md={4} lg={4} xl={4}>
                                 <Form.Label style={{ fontSize: "0.8rem", fontWeight: "bold" }}>Font Family</Form.Label>
-                                <Form.Select style={{ boxShadow: 'none' }} aria-label="Default select example">
-                                    <option value="1">Font 1</option>
-                                    <option value="2">Font 2</option>
-                                    <option value="3">Font 3</option>
+                                <Form.Select style={{ boxShadow: 'none' }} onChange={(e) => {
+                                    setFontFamily(e.target.value);
+                                }} aria-label="Default select example">
+                                    <option value="'Handlee', cursive">Handlee</option>
+                                    <option value="'Gochi Hand', cursive">Gochi Hand</option>
+                                    <option value="'Patrick Hand', cursive">Patrick Hand</option>
                                 </Form.Select>
                             </Col>
 
