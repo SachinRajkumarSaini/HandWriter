@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
 
 /* Navbar CSS Code */
 .Navbarbrand{
-    font-size: 2.3rem;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 3rem;
+    font-family: 'Dongle', sans-serif;
     padding-left: 1rem;
     background: rgb(72,76,252);
     background: linear-gradient(90deg, rgba(72,76,252,1) 0%, rgba(99,102,255,1) 35%, rgba(39,43,245,1) 100%);
@@ -13,9 +14,9 @@
 
 .Navbaritem{
     padding-right: 4rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Dongle', sans-serif;
 }
 
 .Navbaritem:hover{
@@ -41,8 +42,31 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* About Us Code */
+.aboutUsContainer text{
+    color: black;
+    font-weight: 300;
+    font-family: 'Dongle', sans-serif;
+    font-size: 2rem;
+}
+
 /* Footer CSS Code */
 .copyrightText{
     padding: 2rem;
     text-align: center;
+}
+
+
+/* Media Query for small devices */
+
+@media(max-width: 768px){
+    /* Navbar CSS Code */
+    .Navbaritem{
+        padding-right: 0rem;
+        padding-top: 0.2rem;
+        font-size: 1.5rem;
+    }
+    .githubIcon{
+        font-size: 1.45rem;
+    }
 }

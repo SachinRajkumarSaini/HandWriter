@@ -37,26 +37,22 @@ const TextToHandwriter = () => {
                 <Col sm={12} xs={12} md={12} lg={5} xl={5} >
 
                     {/* Input Text */}
-                    <Row>
-                        <Row>
-                            <h3 style={{ paddingBottom: '0.5rem', fontFamily: 'Nanum Gothic' }}>Text to Handwriting Converter</h3>
-                        </Row>
-                        <Row>
-                            <Card style={{ borderRadius: '0.5rem', padding: "0.8rem", borderColor: "#484cfc" }}>
-                                <Form>
-                                    <Form.Group className="mb-3">
-                                        <Form.Label className="text-muted" style={{ fontSize: '0.8rem', paddingLeft: "0.7rem" }}>Text</Form.Label>
-                                        <Form.Control style={{ borderColor: "white", boxShadow: 'none' }} onChange={(e) => {
-                                            setText(e.target.value);
-                                        }} as="textarea" rows={29} />
-                                    </Form.Group>
-                                </Form>
-                            </Card>
-                        </Row>
+                    <Row style={{ margin: "0.8rem" }}>
+                        <h3 style={{ paddingBottom: '0.5rem', fontFamily: 'Nanum Gothic' }}>Text to Handwriting Converter</h3>
+                        <Card style={{ borderRadius: '0.5rem', padding: "0.8rem", borderColor: "#484cfc" }}>
+                            <Form>
+                                <Form.Group className="mb-3">
+                                    <Form.Label className="text-muted" style={{ fontSize: '0.8rem', paddingLeft: "0.7rem" }}>Text</Form.Label>
+                                    <Form.Control style={{ borderColor: "white", boxShadow: 'none' }} onChange={(e) => {
+                                        setText(e.target.value);
+                                    }} as="textarea" rows={29} />
+                                </Form.Group>
+                            </Form>
+                        </Card>
                     </Row>
 
                     {/* Tools */}
-                    <Row style={{ marginTop: "1rem" }}>
+                    <Row style={{ margin: "0.8rem" }}>
                         {/* Font Tools */}
                         <Row style={{ marginTop: "1rem" }}>
 
@@ -137,8 +133,10 @@ const TextToHandwriter = () => {
 
                             {/* Font Weight */}
                             <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-                                <Form.Label style={{ fontSize: "0.8rem", fontWeight: "bold", marginTop: "0.5rem" }}>Font Weight</Form.Label>
-                                <Slider style={{ width: 150 }}
+                                <Row>
+                                    <Form.Label style={{ fontSize: "0.8rem", fontWeight: "bold", marginTop: "0.8rem" }}>Font Weight</Form.Label>
+                                </Row>
+                                <Slider style={{ width: "100%" }}
                                     defaultValue={200}
                                     value={fontWeight}
                                     aria-labelledby="discrete-slider"
@@ -216,8 +214,10 @@ const TextToHandwriter = () => {
                             </Col>
 
                             <Col xs={12} sm={6} md={4} lg={4} xl={4}>
-                                <Form.Label style={{ fontSize: "0.8rem", fontWeight: "bold", marginTop: "0.5rem" }}>Line Height</Form.Label>
-                                <Slider style={{ width: 150 }}
+                                <Row>
+                                    <Form.Label style={{ fontSize: "0.8rem", fontWeight: "bold", marginTop: "0.5rem" }}>Line Height</Form.Label>
+                                </Row>
+                                <Slider style={{ width: "100%" }}
                                     defaultValue={30}
                                     value={lineHeight}
                                     aria-labelledby="discrete-slider"
@@ -237,11 +237,11 @@ const TextToHandwriter = () => {
 
 
                 {/* Output Paper */}
-                <Col sm={12} xs={12} md={12} lg={5} xl={5} >
-                    <Row>
+                <Col sm={12} xs={12} md={12} lg={5} xl={5} style={{ marginTop: "1rem" }} >
+                    <Row style={{ marginRight: "1rem", marginLeft: "1rem" }}>
                         <h3 style={{ paddingBottom: '0.5rem', fontFamily: 'Nanum Gothic' }}>Output</h3>
                     </Row>
-                    <Row className="output_container">
+                    <Row style={{ marginRight: "1rem", marginLeft: "1rem" }} >
                         <Paper elevation={3} square={true} className="paper" id="page" style={{
                             backgroundImage:
                                 paperType === "Line Paper" ? 'repeating-linear-gradient(transparent 0px, transparent 24px, #333333 25px)' : 'none', backgroundColor: `${paperColor}`,

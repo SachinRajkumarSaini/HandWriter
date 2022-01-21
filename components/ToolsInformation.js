@@ -3,7 +3,7 @@ import { Card, Container, Image, Row } from 'react-bootstrap';
 
 const ToolsInformation = () => {
     return (
-        <Container style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', paddingTop: "3rem", paddingBottom: "3rem" }} >
+        <Container style={{ display: 'flex', justifyContent: 'center', alignItem: 'center', padding: "2rem" }} >
             <Row style={{ width: "65rem" }}>
                 <Card style={{ padding: "2rem", borderRadius: '0.5rem' }}>
                     <h1 style={{ fontFamily: 'Nanum Gothic' }}>What is Online Text to Handwriting Converter ?</h1>
